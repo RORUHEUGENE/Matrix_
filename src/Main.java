@@ -58,14 +58,14 @@ public class Main {
     //подсчитать и вывести максимальный элемент матрицы
     public static int printMaxElem(int[][] matr)
     {
-        int[][] s = new int[][];
-        int s = matr[0][0];
+        int s ;
+        s = matr[0][0];
         for (int i = 0; i < matr.length; i++) {
             for (int j = 0; j < matr[i].length; j++) {
                 if (matr[i][j]>s){
                  s = matr[i][j];
                 }
-                if else (matr[i][j] == s){
+                else if  (matr[i][j] == s){
                     s = s ;
                 }
                 else {
