@@ -10,6 +10,7 @@ public class Main {
         randomize(matr);
         printMatr(matr);
         printLineSums(matr);
+        printMaxElem(matr);
     }
 
     private static int[][] createMatrixOfZeroes() {
@@ -51,6 +52,28 @@ public class Main {
                 s += matr[i][j];
             }
             System.out.println("сумма элементов строки "+i+" равна "+s);
+        }
+    }
+
+    //подсчитать и вывести максимальный элемент матрицы
+    public static int printMaxElem(int[][] matr)
+    {
+        int[][] s = new int[][];
+        int s = matr[0][0];
+        for (int i = 0; i < matr.length; i++) {
+            for (int j = 0; j < matr[i].length; j++) {
+                if (matr[i][j]>s){
+                 s = matr[i][j];
+                }
+                if else (matr[i][j] == s){
+                    s = s ;
+                }
+                else {
+                    s=s;
+                    }
+                            }
+            System.out.println("максимальный элементов матрицы равн "+s);
+            return s;
         }
     }
 }
